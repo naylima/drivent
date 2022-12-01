@@ -12,6 +12,7 @@
     "migration:generate": "npm run dev:load-envs prisma migrate dev",
     "lint": "eslint .",
     "lint:staged": "lint-staged",
+    "lint: fix": "eslint . --fix",
     "test": "NODE_ENV=test jest --passWithNoTests --runInBand",
     "test:coverage": "NODE_ENV=test jest --passWithNoTests --runInBand --coverage --collectCoverageFrom='./src/**'",
     "test:migration:run": "npm run test:load-envs prisma migrate deploy",
@@ -87,6 +88,7 @@
     "http-status": "^1.5.2",
     "joi": "^17.6.0",
     "jsonwebtoken": "^8.5.1",
+    "ntl": "^5.1.0",
     "reflect-metadata": "^0.1.13"
   }
 }
