@@ -17,8 +17,8 @@ async function getBooking(userId: number) {
 async function createOrUpdateBooking(params: CreateBookingParams, bookingId?: number) {
   await permission(params.userId);
 
-  const findBooking = await bookingRepository.findBookingbyUserId(params.userId);
-  if (!findBooking && bookingId ) throw forbiddenError();
+  const booking = await bookingRepository.findBookingbyUserId(params.userId);
+  if (!booking && bookingId || booking && !bookingId) throw forbiddenError();
 
   const room = await roomRepository.findRoomById(params.roomId);
   if(!room) throw notFoundError();
@@ -26,12 +26,12 @@ async function createOrUpdateBooking(params: CreateBookingParams, bookingId?: nu
   const vacancies = await bookingRepository.countRoomBookings(room.id);
   if(vacancies === room.capacity) throw forbiddenError();
   
-  const booking = ( bookingId? 
+  const newBooking = ( bookingId? 
     await bookingRepository.upsert(params, bookingId) :
     await bookingRepository.upsert(params)
   );  
   
-  return { bookingId: booking.id };
+  return { bookingId: newBooking.id };
 }
 
 async function permission(userId: number ) {

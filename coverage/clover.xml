@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669918260202" clover="3.2.0">
-  <project timestamp="1669918260203" name="All files">
-    <metrics statements="588" coveredstatements="552" conditionals="86" coveredconditionals="63" methods="97" coveredmethods="89" elements="771" coveredelements="704" complexity="0" loc="588" ncloc="588" packages="27" files="65" classes="65"/>
+<coverage generated="1669998418861" clover="3.2.0">
+  <project timestamp="1669998418861" name="All files">
+    <metrics statements="588" coveredstatements="552" conditionals="88" coveredconditionals="65" methods="97" coveredmethods="89" elements="773" coveredelements="706" complexity="0" loc="588" ncloc="588" packages="27" files="65" classes="65"/>
     <package name="src">
       <metrics statements="22" coveredstatements="16" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="2"/>
       <file name="app.ts" path="/home/nayara/Documents/calvs-drivent/src/app.ts">
@@ -81,13 +81,13 @@
         <line num="10" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="16" count="11" type="stmt"/>
-        <line num="17" count="15" type="stmt"/>
-        <line num="18" count="15" type="stmt"/>
-        <line num="19" count="15" type="stmt"/>
+        <line num="17" count="13" type="stmt"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
-        <line num="26" count="13" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="12" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="26" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="9" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
       </file>
       <file name="enrollments-controller.ts" path="/home/nayara/Documents/calvs-drivent/src/controllers/enrollments-controller.ts">
         <metrics statements="20" coveredstatements="19" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
@@ -247,7 +247,7 @@
       <file name="forbidden-error.ts" path="/home/nayara/Documents/calvs-drivent/src/errors/forbidden-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="12" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
       </file>
       <file name="index.ts" path="/home/nayara/Documents/calvs-drivent/src/errors/index.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -273,7 +273,7 @@
       <file name="not-found-error.ts" path="/home/nayara/Documents/calvs-drivent/src/errors/not-found-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="3" count="11" type="stmt"/>
-        <line num="4" count="13" type="stmt"/>
+        <line num="4" count="14" type="stmt"/>
       </file>
       <file name="request-error.ts" path="/home/nayara/Documents/calvs-drivent/src/errors/request-error.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -295,16 +295,16 @@
         <line num="5" count="11" type="stmt"/>
         <line num="6" count="11" type="stmt"/>
         <line num="8" count="11" type="stmt"/>
-        <line num="9" count="89" type="stmt"/>
-        <line num="10" count="89" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="77" type="stmt"/>
-        <line num="13" count="77" type="cond" truecount="0" falsecount="1"/>
-        <line num="15" count="77" type="stmt"/>
-        <line num="16" count="77" type="stmt"/>
-        <line num="18" count="65" type="stmt"/>
-        <line num="23" count="65" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="53" type="stmt"/>
-        <line num="27" count="53" type="stmt"/>
+        <line num="9" count="87" type="stmt"/>
+        <line num="10" count="87" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="75" type="stmt"/>
+        <line num="13" count="75" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="75" type="stmt"/>
+        <line num="16" count="75" type="stmt"/>
+        <line num="18" count="63" type="stmt"/>
+        <line num="23" count="63" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="51" type="stmt"/>
+        <line num="27" count="51" type="stmt"/>
         <line num="29" count="12" type="stmt"/>
         <line num="34" count="36" type="stmt"/>
       </file>
@@ -361,7 +361,7 @@
       <file name="index.ts" path="/home/nayara/Documents/calvs-drivent/src/repositories/booking-repository/index.ts">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
         <line num="1" count="11" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
         <line num="35" count="11" type="stmt"/>
@@ -373,7 +373,7 @@
       <file name="index.ts" path="/home/nayara/Documents/calvs-drivent/src/repositories/enrollment-repository/index.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="11" type="stmt"/>
-        <line num="5" count="32" type="stmt"/>
+        <line num="5" count="30" type="stmt"/>
         <line num="14" count="6" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="36" count="11" type="stmt"/>
@@ -417,7 +417,7 @@
       <file name="index.ts" path="/home/nayara/Documents/calvs-drivent/src/repositories/room-repository/index.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="11" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
         <line num="11" count="11" type="stmt"/>
         <line num="15" count="11" type="stmt"/>
       </file>
@@ -441,7 +441,7 @@
         <line num="5" count="2" type="stmt"/>
         <line num="9" count="8" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
-        <line num="30" count="22" type="stmt"/>
+        <line num="30" count="21" type="stmt"/>
         <line num="41" count="2" type="stmt"/>
         <line num="49" count="3" type="stmt"/>
         <line num="61" count="11" type="stmt"/>
@@ -636,9 +636,9 @@
       </file>
     </package>
     <package name="src.services.booking-service">
-      <metrics statements="25" coveredstatements="25" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
+      <metrics statements="25" coveredstatements="25" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3"/>
       <file name="index.ts" path="/home/nayara/Documents/calvs-drivent/src/services/booking-service/index.ts">
-        <metrics statements="25" coveredstatements="25" conditionals="14" coveredconditionals="14" methods="3" coveredmethods="3"/>
+        <metrics statements="25" coveredstatements="25" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3"/>
         <line num="1" count="11" type="stmt"/>
         <line num="2" count="11" type="stmt"/>
         <line num="3" count="11" type="stmt"/>
@@ -648,20 +648,20 @@
         <line num="9" count="2" type="stmt"/>
         <line num="10" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="18" count="15" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-        <line num="21" count="7" type="cond" truecount="3" falsecount="0"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="24" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="13" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="8" type="cond" truecount="5" falsecount="0"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="24" count="6" type="cond" truecount="1" falsecount="0"/>
         <line num="26" count="4" type="stmt"/>
         <line num="27" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="29" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="34" count="2" type="stmt"/>
-        <line num="38" count="15" type="stmt"/>
-        <line num="39" count="15" type="cond" truecount="1" falsecount="0"/>
-        <line num="41" count="11" type="stmt"/>
-        <line num="42" count="11" type="cond" truecount="1" falsecount="0"/>
-        <line num="48" count="4" type="stmt"/>
+        <line num="38" count="13" type="stmt"/>
+        <line num="39" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="41" count="10" type="stmt"/>
+        <line num="42" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="48" count="2" type="stmt"/>
         <line num="52" count="11" type="stmt"/>
         <line num="57" count="11" type="stmt"/>
       </file>
