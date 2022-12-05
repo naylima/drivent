@@ -12,6 +12,7 @@ import {
   createPayment,
   createTicketTypeWithHotel,
   createTicketTypeRemote,
+  createTicketTypeWithNoHotel,
   createHotel,
   createRoomWithHotelId,
   createBooking
@@ -116,14 +117,14 @@ describe("POST /booking", () => {
     it("should respond with status 403 when user has no enrollment", async () => {
       const user = await createUser();
       const token = await generateValidToken(user);
-      const ticketType = await createTicketTypeRemote();
+      await createTicketTypeRemote();
 
       const response = await server.post("/booking").set("Authorization", `Bearer ${token}`);
 
       expect(response.status).toEqual(httpStatus.FORBIDDEN);
     });
 
-    it("should respond with status 403 when user ticket is remote ", async () => {
+    it("should respond with status 403 when user ticket is remote", async () => {
       const user = await createUser();
       const token = await generateValidToken(user);
       const enrollment = await createEnrollmentWithAddress(user);
@@ -138,7 +139,22 @@ describe("POST /booking", () => {
       expect(response.status).toEqual(httpStatus.FORBIDDEN);
     });
 
-    it("should respond with status 403 when user ticket is not paid ", async () => {
+    it("should respond with status 403 when user ticket doesnt include hotel", async () => {
+      const user = await createUser();
+      const token = await generateValidToken(user);
+      const enrollment = await createEnrollmentWithAddress(user);
+      const ticketType = await createTicketTypeWithNoHotel();
+      const ticket = await createTicket(enrollment.id, ticketType.id, TicketStatus.PAID);
+      await createPayment(ticket.id, ticketType.price);
+      const hotel =  await createHotel();
+      await createRoomWithHotelId(hotel.id);
+  
+      const response = await server.post("/booking").set("Authorization", `Bearer ${token}`);
+  
+      expect(response.status).toEqual(httpStatus.FORBIDDEN);
+    });
+
+    it("should respond with status 403 when user ticket is not paid", async () => {
       const user = await createUser();
       const token = await generateValidToken(user);
       const enrollment = await createEnrollmentWithAddress(user);
